@@ -1,0 +1,104 @@
+{
+    "suggest.minTriggerInputLength": 0,
+    "suggest.triggerAfterInsertEnter": true,
+    "suggest.enablePreview": true,
+    "suggest.noselect": true,
+    "suggest.enablePreselect": false,
+    //"coc.preferences.hoverTarget": "float",
+    //"list.insertMappings": {
+    //"<tab>": "do: 'next'"
+    //},
+    "json.format.enable": true,
+    "coc.preferences.formatOnType": true,
+    "coc.preferences.formatOnSaveFiletypes": [
+        "jsonc", // coc-settings.json have internal filetype as jsonc on older version of coc.nvim.
+        //"go"
+        "rust"
+    ],
+    "languageserver": {
+        "golang": {
+            "command": "gopls",
+            "args": [
+                "-remote=:37374"
+            ],
+            "rootPatterns": [
+                "go.mod",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "filetypes": [
+                "go"
+            ],
+            "initializationOptions": {
+                "usePlaceholders": true
+            }
+        },
+        "rust": {
+            "command": "rust-analyzer",
+            "filetypes": [
+                "rust"
+            ],
+            "rootPatterns": [
+                "Cargo.toml",
+                ".git/"
+            ],
+            "initializationOptions": {
+                "rust-analyzer.assist.importMergeBehaviour": "full"
+            }
+        },
+        "clangd": {
+            "command": "clangd",
+            "args": [
+                "--background-index"
+            ],
+            "rootPatterns": [
+                "compile_flags.txt",
+                "compile_commands.json",
+                ".vim/",
+                ".git/",
+                ".hg/"
+            ],
+            "filetypes": [
+                "c",
+                "cpp",
+                "objc",
+                "objcpp"
+            ]
+        }
+    },
+    "jedi.enable": true,
+    "jedi.startupMessage": false,
+    "jedi.markupKindPreferred": "plaintext",
+    "jedi.trace.server": "off",
+    "jedi.jediSettings.autoImportModules": [],
+    "jedi.jediSettings.caseInsensitiveCompletion": true,
+    "jedi.jediSettings.debug": false,
+    //"jedi.executable.command": "jedi-language-server",
+    "jedi.executable.args": [],
+    "jedi.codeAction.nameExtractFunction": "jls_extract_def",
+    "jedi.codeAction.nameExtractVariable": "jls_extract_var",
+    "jedi.completion.disableSnippets": false,
+    "jedi.completion.resolveEagerly": false,
+    "jedi.completion.ignorePatterns": [],
+    "jedi.diagnostics.enable": true,
+    "jedi.diagnostics.didOpen": true,
+    "jedi.diagnostics.didChange": true,
+    "jedi.diagnostics.didSave": true,
+    "jedi.hover.enable": true,
+    "jedi.hover.disable.keyword.all": false,
+    "jedi.hover.disable.keyword.names": [],
+    "jedi.hover.disable.keyword.fullNames": [],
+    "jedi.workspace.extraPaths": [],
+    "jedi.workspace.symbols.maxSymbols": 20,
+    "jedi.workspace.symbols.ignoreFolders": [
+        ".nox",
+        ".tox",
+        ".venv",
+        "__pycache__",
+        "venv"
+    ],
+    // coc-explorer
+    "explorer.width": 40, // 宽度(default: 40)
+    "explorer.position": "left" // left(default), right, tab, tab:0, tab:$, floating
+}
