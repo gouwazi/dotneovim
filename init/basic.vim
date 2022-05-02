@@ -26,8 +26,12 @@ filetype plugin indent on
 " 关闭自动换行
 set nowrap
 
-" 总是显示状态栏
-set laststatus=2
+" 状态栏
+" 0: 永不
+" 1: 只有在有至少两个窗口时
+" 2: 总是
+" 3: 共用一个状态栏(nvim >= 0.7)
+set laststatus=3
 
 " 显示光标当前位置
 set ruler
@@ -41,6 +45,15 @@ set cursorline
 " 高亮显示当前列
 set cursorcolumn              
 
+" 允许使用鼠标
+"  n 普通模式和终端模式
+"  v 可视模式
+"  i 插入模式
+"  c 命令行模式
+"  h 编辑帮助文件时，所有前面的模式
+"  a 所有前面的模式
+"  r |hit-enter| 和 |more-prompt| 提示时
+set mouse=a
 
 "------------------------------------------------
 " 搜索设置

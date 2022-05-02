@@ -22,6 +22,9 @@ inoremap <silent><expr> <Tab>
       \ <SID>check_back_space() ? "\<Tab>" :
       \ coc#refresh()
 
+" 打开补全
+inoremap <silent><expr> <c-space> coc#refresh()
+
 " 回车完成补全
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
@@ -58,3 +61,9 @@ endif
 
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf  <Plug>(coc-fix-current)
+
+let g:coc_global_extensions = [
+	\ 'coc-explorer',
+	\ 'coc-json',
+    \ 'coc-jedi',
+	\ 'coc-translator']
