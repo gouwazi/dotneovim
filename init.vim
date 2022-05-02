@@ -26,3 +26,5 @@ source ~/.config/nvim/init/keymaps.vim
 for file in split(glob('~/.config/nvim/init/plugins/*.vim'), '\n')
 	exe 'source' file
 endfor
+
+lua require('init')

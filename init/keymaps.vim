@@ -29,3 +29,6 @@ nnoremap <space>e :CocCommand explorer<CR>
 " 翻译
 nmap <Leader>t <Plug>(coc-translator-p)
 vmap <Leader>t <Plug>(coc-translator-pv)
+
+" nvim-tree
+nnoremap <C-n> :NvimTreeToggle<CR>

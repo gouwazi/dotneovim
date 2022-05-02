@@ -126,6 +126,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 	" 目录树
 	Plug 'scrooloose/nerdtree'
+	Plug 'kyazdani42/nvim-web-devicons' " for file icons
+	Plug 'kyazdani42/nvim-tree.lua'
 
 	" 语法检查和语义错误
 	Plug 'w0rp/ale'
