@@ -66,4 +66,5 @@ let g:coc_global_extensions = [
 	\ 'coc-explorer',
 	\ 'coc-json',
     \ 'coc-jedi',
+    \ 'coc-sumneko-lua',
 	\ 'coc-translator']

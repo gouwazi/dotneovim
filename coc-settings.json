@@ -3,7 +3,8 @@
     "coc.preferences.formatOnSaveFiletypes": [
         "jsonc", // coc-settings.json have internal filetype as jsonc on older version of coc.nvim.
         //"go"
-        "rust"
+        "rust",
+        "lua"
     ],
     "suggest.minTriggerInputLength": 0,
     "suggest.triggerAfterInsertEnter": true,
@@ -139,5 +140,6 @@
         "youdao"
         //"haici"
     ],
-    "translator.enableHover": true
+    "translator.enableHover": true,
+    "Lua.telemetry.enable": false
 }
