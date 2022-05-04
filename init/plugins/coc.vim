@@ -30,7 +30,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " <leader>rn 重命名
-nmap <leader>rn <Plug>(coc-rename)
+"nmap <leader>rn <Plug>(coc-rename)
 
 " 代码跳转 <C-o>返回
 

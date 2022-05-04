@@ -144,6 +144,8 @@ call plug#begin('~/.config/nvim/plugged')
 	" 模糊查找
 	" 需要安装ctags
 	Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+	Plug 'nvim-lua/plenary.nvim'
+	Plug 'nvim-telescope/telescope.nvim'
 	
 	" 任务系统
 	Plug 'skywind3000/asynctasks.vim'
@@ -162,5 +164,7 @@ call plug#begin('~/.config/nvim/plugged')
 	
 	" 在不同模式下自动切换中英文
 	Plug 'lilydjwg/fcitx.vim', {'branch': 'fcitx4'}
+
+	Plug 'folke/which-key.nvim'
 
 call plug#end()
