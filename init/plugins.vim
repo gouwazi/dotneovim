@@ -94,7 +94,8 @@ call plug#begin('~/.config/nvim/plugged')
 	"--------------------------------------------
 
 	"状态栏
-	Plug 'vim-airline/vim-airline'
+	"Plug 'vim-airline/vim-airline'
+	Plug 'nvim-lualine/lualine.nvim'
 
 	"高亮
 	Plug 'sheerun/vim-polyglot'
