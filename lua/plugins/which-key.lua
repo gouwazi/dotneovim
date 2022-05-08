@@ -73,12 +73,14 @@ which_key.setup(setup)
 which_key.register({
 	["<leader>"] = {
 		name = "快捷键",
+		e = { "<cmd>NvimTreeToggle<cr>", "目录树" },
 		f = {
 			name = "查找",
 			f = { "<cmd>Telescope find_files<cr>", "文件" },
 			r = { "<cmd>Telescope oldfiles<cr>", "最近文件" },
 			t = { "<cmd>Telescope live_grep<cr>", "文本" }
-		}
+		},
+		t = { "<Plug>(coc-translator-p)", "翻译", noremap = false }
 	},
 	g = {
 		name = "跳转",
@@ -86,5 +88,19 @@ which_key.register({
 		i = { "<Plug>(coc-implementation)", "实现", silent = true, noremap = false },
 		r = { "<Plug>(coc-references)", "引用", silent = true, noremap = false },
 		y = { "<Plug>(coc-type-definition)", "类型定义", silent = true, noremap = false },
-	}
+	},
+
+})
+which_key.register({
+	["<leader>"] = {
+		name = "快捷键",
+		t = { "<Plug>(coc-translator-pv)", "翻译", noremap = false }
+	},
+}, {
+	mode = "v",
+	prefix = "",
+	buffer = nil,
+	silent = true,
+	noremap = true,
+	nowait = false,
 })

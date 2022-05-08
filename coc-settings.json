@@ -129,9 +129,9 @@
         "venv"
     ],
     // coc-explorer
-    "explorer.width": 40, // 宽度(default: 40)
-    "explorer.position": "left", // left(default), right, tab, tab:0, tab:$, floating
-    "explorer.icon.enableNerdfont": true,
+    //"explorer.width": 40, // 宽度(default: 40)
+    //"explorer.position": "left", // left(default), right, tab, tab:0, tab:$, floating
+    //"explorer.icon.enableNerdfont": true,
     // TODO:
     // icon color: https://github.com/weirongxu/coc-explorer/wiki/FAQ#why-is-my-file-icon-not-colored
     "translator.engines": [
@@ -140,6 +140,6 @@
         "youdao"
         //"haici"
     ],
-    "translator.enableHover": true,
+    "translator.enableHover": false,
     "Lua.telemetry.enable": false
 }

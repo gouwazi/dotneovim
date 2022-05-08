@@ -53,4 +53,4 @@ xnoremap gf :<C-U><C-R>=printf("Leaderf! rg -F -e %s ", leaderf#Rg#visual())<CR>
 " 重复上次搜索
 noremap go :<C-U>Leaderf! rg --recall<CR>
 " 当前buffer下的函数和方法
-noremap <leader>f :LeaderfFunction<cr>
+"noremap <leader>f :LeaderfFunction<cr>

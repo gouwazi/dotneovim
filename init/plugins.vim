@@ -125,7 +125,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 
 	" 目录树
-	Plug 'scrooloose/nerdtree'
+	"Plug 'scrooloose/nerdtree'
 	Plug 'kyazdani42/nvim-web-devicons' " for file icons
 	Plug 'kyazdani42/nvim-tree.lua'
 
@@ -147,9 +147,6 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-telescope/telescope.nvim'
 	
-	" 任务系统
-	Plug 'skywind3000/asynctasks.vim'
-
 	" 异步执行
 	Plug 'skywind3000/asyncrun.vim'
 	

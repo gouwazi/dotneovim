@@ -35,16 +35,16 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
 " 代码跳转 <C-o>返回
 
     "跳转到定义处
-    nmap <silent> gd <Plug>(coc-definition)      
+    "nmap <silent> gd <Plug>(coc-definition)      
 
     " 跳转到类型定义
-    nmap <silent> gy <Plug>(coc-type-definition)
+    "nmap <silent> gy <Plug>(coc-type-definition)
 
     " 跳转到实现
-    nmap <silent> gi <Plug>(coc-implementation)
+    "nmap <silent> gi <Plug>(coc-implementation)
 
     " 跳转到引用
-    nmap <silent> gr <Plug>(coc-references)
+    "nmap <silent> gr <Plug>(coc-references)
 
     " go语言使用vim-go 提供的命令返回，避免多次<C-o>
     autocmd FileType go nnoremap <buffer> <silent> <C-o> :GoDefPop<cr>
@@ -63,7 +63,7 @@ endif
 nmap <leader>qf  <Plug>(coc-fix-current)
 
 let g:coc_global_extensions = [
-	\ 'coc-explorer',
+	"\ 'coc-explorer',
 	\ 'coc-json',
     \ 'coc-jedi',
     \ 'coc-sumneko-lua',

@@ -24,11 +24,11 @@ nnoremap <silent> <F9> :AsyncTask file-build<cr>
 nnoremap <F10> :call asyncrun#quickfix_toggle(20)<cr>
 
 " 打开/关闭 coc-explorer
-nnoremap <space>e :CocCommand explorer<CR>
+"nnoremap <space>e :CocCommand explorer<CR>
 
 " 翻译
-nmap <Leader>t <Plug>(coc-translator-p)
-vmap <Leader>t <Plug>(coc-translator-pv)
+"nmap <Leader>t <Plug>(coc-translator-p)
+"vmap <Leader>t <Plug>(coc-translator-pv)
 
 " nvim-tree
-nnoremap <C-n> :NvimTreeToggle<CR>
+"nnoremap <C-n> :NvimTreeToggle<CR>
