@@ -71,6 +71,22 @@ call plug#begin('~/.config/nvim/plugged')
 	Plug 'sainnhe/sonokai'
 	Plug 'ajmwagar/vim-deus'
 	Plug 'nanotech/jellybeans.vim'
+	
+	" 菜单
+	if has('nvim')
+  		function! UpdateRemotePlugins(...)
+    	" Needed to refresh runtime files
+    	let &rtp=&rtp
+    	UpdateRemotePlugins
+  		endfunction
+		Plug 'gelguy/wilder.nvim', { 'do': function('UpdateRemotePlugins') }
+	else
+  		Plug 'gelguy/wilder.nvim'
+
+  		" To use Python remote plugin features in Vim, can be skipped
+  		Plug 'roxma/nvim-yarp'
+  		Plug 'roxma/vim-hug-neovim-rpc'
+    endif
 
 
 	"--------------------------------------------
