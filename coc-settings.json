@@ -98,6 +98,18 @@
                 "objc",
                 "objcpp"
             ]
+        },
+        "bash": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ],
+            "ignoredRootPaths": [
+                "~"
+            ]
         }
     },
     "jedi.enable": true,
