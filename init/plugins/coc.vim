@@ -30,7 +30,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 " <leader>rn 重命名
-"nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>rn <Plug>(coc-rename)
 
 " 代码跳转 <C-o>返回
 
@@ -65,6 +65,6 @@ nmap <leader>qf  <Plug>(coc-fix-current)
 let g:coc_global_extensions = [
 	"\ 'coc-explorer',
 	\ 'coc-json',
-    \ 'coc-jedi',
+    \ 'coc-pyright',
     \ 'coc-sumneko-lua',
 	\ 'coc-translator']
